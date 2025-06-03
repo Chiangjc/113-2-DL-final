@@ -1,0 +1,17 @@
+模型架構: resnet50
+批次大小: 32
+學習率: 0.0005
+訓練輪數: 30
+圖片目錄: datasets/images
+標籤目錄: datasets/labels
+輸出目錄: outputs/resnet50_bs32_lr0.0005_ep30_20250531_145459
+Dropout 率: 0.5
+權重衰減: 1e-4
+耐心值: 10
+分類閾值: 0.5
+預訓練權重: 是
+設備: cuda
+wandb 專案: resnet
+wandb run 名稱: 
+實驗名稱: resnet50_bs32_lr0.0005_ep30_20250531_145459
+開始時間: 公曆 20廿五年 五月 卅一日 週六 十四時54分59秒
