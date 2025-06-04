@@ -1,0 +1,378 @@
+wandb: Currently logged in as: hcy43 (hcy43-academia-sinica) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.19.11
+wandb: Run data is saved locally in /home/michael920403/May15/yo/wandb/run-20250531_145507-xhjzm3ul
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run rural-surf-5
+wandb: ⭐️ View project at https://wandb.ai/hcy43-academia-sinica/resnet
+wandb: 🚀 View run at https://wandb.ai/hcy43-academia-sinica/resnet/runs/xhjzm3ul
+/home/michael920403/anaconda3/envs/yolo_app/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/michael920403/anaconda3/envs/yolo_app/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+使用設備: cuda
+模型架構: resnet50
+使用預訓練權重: True
+正在載入訓練資料...
+Dataset 初始化完成:
+- 圖片目錄: datasets/images/train
+- 標籤目錄: datasets/labels/train
+- 圖片數量: 2304
+- 類別數量: 7
+- 類別列表: ['class_0', 'class_1', 'class_2', 'class_3', 'class_4', 'class_5', 'class_6']
+正在載入驗證資料...
+Dataset 初始化完成:
+- 圖片目錄: datasets/images/val
+- 標籤目錄: datasets/labels/val
+- 圖片數量: 288
+- 類別數量: 7
+- 類別列表: ['class_0', 'class_1', 'class_2', 'class_3', 'class_4', 'class_5', 'class_6']
+正在載入測試資料...
+Dataset 初始化完成:
+- 圖片目錄: datasets/images/test
+- 標籤目錄: datasets/labels/test
+- 圖片數量: 288
+- 類別數量: 7
+- 類別列表: ['class_0', 'class_1', 'class_2', 'class_3', 'class_4', 'class_5', 'class_6']
+=== 類別分布分析 ===
+
+Train 集合:
+總圖片數: 2304
+  class_0: 639 (27.7%)
+  class_1: 370 (16.1%)
+  class_2: 313 (13.6%)
+  class_3: 293 (12.7%)
+  class_4: 291 (12.6%)
+  class_5: 264 (11.5%)
+  class_6: 642 (27.9%)
+
+Validation 集合:
+總圖片數: 288
+  class_0: 84 (29.2%)
+  class_1: 55 (19.1%)
+  class_2: 33 (11.5%)
+  class_3: 33 (11.5%)
+  class_4: 38 (13.2%)
+  class_5: 27 (9.4%)
+  class_6: 77 (26.7%)
+
+Test 集合:
+總圖片數: 288
+  class_0: 84 (29.2%)
+  class_1: 46 (16.0%)
+  class_2: 41 (14.2%)
+  class_3: 43 (14.9%)
+  class_4: 40 (13.9%)
+  class_5: 24 (8.3%)
+  class_6: 85 (29.5%)
+模型初始化完成: resnet50, 預訓練: True
+特徵維度: 2048, 類別數: 7
+
+開始訓練...
+模型: resnet50
+批次大小: 32
+學習率: 0.0005
+最大訓練輪數: 30
+Early stopping 耐心值: 10
+
+Epoch 1/30
+----------
+Train Loss: 0.2691
+Val Loss:   0.2470
+Learning Rate: 0.000500
+保存最佳模型
+
+Epoch 2/30
+----------
+Train Loss: 0.1765
+Val Loss:   0.1086
+Learning Rate: 0.000500
+保存最佳模型
+
+Epoch 3/30
+----------
+Train Loss: 0.1351
+Val Loss:   0.1022
+Learning Rate: 0.000500
+保存最佳模型
+
+Epoch 4/30
+----------
+Train Loss: 0.1279
+Val Loss:   0.1133
+Learning Rate: 0.000500
+
+Epoch 5/30
+----------
+Train Loss: 0.1090
+Val Loss:   0.1273
+Learning Rate: 0.000500
+
+Epoch 6/30
+----------
+Train Loss: 0.0934
+Val Loss:   0.0928
+Learning Rate: 0.000500
+保存最佳模型
+
+Epoch 7/30
+----------
+Train Loss: 0.0940
+Val Loss:   0.2295
+Learning Rate: 0.000500
+
+Epoch 8/30
+----------
+Train Loss: 0.0857
+Val Loss:   0.0814
+Learning Rate: 0.000500
+保存最佳模型
+
+Epoch 9/30
+----------
+Train Loss: 0.0845
+Val Loss:   0.0710
+Learning Rate: 0.000500
+保存最佳模型
+
+Epoch 10/30
+----------
+Train Loss: 0.0826
+Val Loss:   0.0794
+Learning Rate: 0.000500
+
+Epoch 11/30
+----------
+Train Loss: 0.0781
+Val Loss:   0.0499
+Learning Rate: 0.000500
+保存最佳模型
+
+Epoch 12/30
+----------
+Train Loss: 0.0729
+Val Loss:   0.0704
+Learning Rate: 0.000500
+
+Epoch 13/30
+----------
+Train Loss: 0.0728
+Val Loss:   0.0755
+Learning Rate: 0.000500
+
+Epoch 14/30
+----------
+Train Loss: 0.0662
+Val Loss:   0.0536
+Learning Rate: 0.000500
+
+Epoch 15/30
+----------
+Train Loss: 0.0707
+Val Loss:   0.0665
+Learning Rate: 0.000500
+
+Epoch 16/30
+----------
+Train Loss: 0.0637
+Val Loss:   0.0536
+Learning Rate: 0.000500
+
+Epoch 17/30
+----------
+Train Loss: 0.0644
+Val Loss:   0.0511
+Learning Rate: 0.000250
+
+Epoch 18/30
+----------
+Train Loss: 0.0393
+Val Loss:   0.0252
+Learning Rate: 0.000250
+保存最佳模型
+
+Epoch 19/30
+----------
+Train Loss: 0.0423
+Val Loss:   0.0259
+Learning Rate: 0.000250
+
+Epoch 20/30
+----------
+Train Loss: 0.0382
+Val Loss:   0.0506
+Learning Rate: 0.000250
+
+Epoch 21/30
+----------
+Train Loss: 0.0359
+Val Loss:   0.0227
+Learning Rate: 0.000250
+保存最佳模型
+
+Epoch 22/30
+----------
+Train Loss: 0.0249
+Val Loss:   0.0192
+Learning Rate: 0.000250
+保存最佳模型
+
+Epoch 23/30
+----------
+Train Loss: 0.0242
+Val Loss:   0.0241
+Learning Rate: 0.000250
+
+Epoch 24/30
+----------
+Train Loss: 0.0267
+Val Loss:   0.0405
+Learning Rate: 0.000250
+
+Epoch 25/30
+----------
+Train Loss: 0.0305
+Val Loss:   0.0336
+Learning Rate: 0.000250
+
+Epoch 26/30
+----------
+Train Loss: 0.0296
+Val Loss:   0.0198
+Learning Rate: 0.000250
+
+Epoch 27/30
+----------
+Train Loss: 0.0225
+Val Loss:   0.0298
+Learning Rate: 0.000250
+
+Epoch 28/30
+----------
+Train Loss: 0.0268
+Val Loss:   0.0186
+Learning Rate: 0.000250
+保存最佳模型
+
+Epoch 29/30
+----------
+Train Loss: 0.0358
+Val Loss:   0.0430
+Learning Rate: 0.000250
+
+Epoch 30/30
+----------
+Train Loss: 0.0288
+Val Loss:   0.0202
+Learning Rate: 0.000250
+訓練歷史已保存到: outputs/resnet50_bs32_lr0.0005_ep30_20250531_145459/training_history.json
+訓練歷史圖已存至: outputs/resnet50_bs32_lr0.0005_ep30_20250531_145459/training_history.png
+載入最佳模型進行評估...
+wandb: uploading artifact best_multilabel_model; uploading wandb-summary.json
+wandb: uploading artifact best_multilabel_model
+wandb: uploading artifact best_multilabel_model; uploading history steps 29-38, summary, console lines 253-281
+wandb: uploading artifact best_multilabel_model
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:        class_0_f1 ▁
+wandb: class_0_precision ▁
+wandb:    class_0_recall ▁
+wandb:   class_0_support ▁
+wandb:        class_1_f1 ▁
+wandb: class_1_precision ▁
+wandb:    class_1_recall ▁
+wandb:   class_1_support ▁
+wandb:        class_2_f1 ▁
+wandb: class_2_precision ▁
+wandb:    class_2_recall ▁
+wandb:   class_2_support ▁
+wandb:        class_3_f1 ▁
+wandb: class_3_precision ▁
+wandb:    class_3_recall ▁
+wandb:   class_3_support ▁
+wandb:        class_4_f1 ▁
+wandb: class_4_precision ▁
+wandb:    class_4_recall ▁
+wandb:   class_4_support ▁
+wandb:        class_5_f1 ▁
+wandb: class_5_precision ▁
+wandb:    class_5_recall ▁
+wandb:   class_5_support ▁
+wandb:        class_6_f1 ▁
+wandb: class_6_precision ▁
+wandb:    class_6_recall ▁
+wandb:   class_6_support ▁
+wandb:             epoch ▁▁▁▂▂▂▂▃▃▃▃▄▄▄▄▅▅▅▅▆▆▆▆▇▇▇▇███
+wandb:     learning_rate ████████████████▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:          macro_f1 ▁
+wandb:          micro_f1 ▁
+wandb:   micro_precision ▁
+wandb:      micro_recall ▁
+wandb:        train_loss █▅▄▄▃▃▃▃▃▃▃▂▂▂▂▂▂▁▂▁▁▁▁▁▁▁▁▁▁▁
+wandb:          val_loss █▄▄▄▄▃▇▃▃▃▂▃▃▂▂▂▂▁▁▂▁▁▁▂▁▁▁▁▂▁
+wandb: 
+wandb: Run summary:
+wandb:        class_0_f1 0.96203
+wandb: class_0_precision 0.98701
+wandb:    class_0_recall 0.93827
+wandb:   class_0_support 81
+wandb:        class_1_f1 0.96552
+wandb: class_1_precision 1
+wandb:    class_1_recall 0.93333
+wandb:   class_1_support 45
+wandb:        class_2_f1 0.96296
+wandb: class_2_precision 0.975
+wandb:    class_2_recall 0.95122
+wandb:   class_2_support 41
+wandb:        class_3_f1 1
+wandb: class_3_precision 1
+wandb:    class_3_recall 1
+wandb:   class_3_support 40
+wandb:        class_4_f1 0.95522
+wandb: class_4_precision 0.9697
+wandb:    class_4_recall 0.94118
+wandb:   class_4_support 34
+wandb:        class_5_f1 0.91892
+wandb: class_5_precision 1
+wandb:    class_5_recall 0.85
+wandb:   class_5_support 20
+wandb:        class_6_f1 0.9697
+wandb: class_6_precision 0.97561
+wandb:    class_6_recall 0.96386
+wandb:   class_6_support 83
+wandb:             epoch 30
+wandb:     learning_rate 0.00025
+wandb:          macro_f1 0.96205
+wandb:          micro_f1 0.96593
+wandb:   micro_precision 0.98489
+wandb:      micro_recall 0.94767
+wandb:        train_loss 0.0288
+wandb:          val_loss 0.02018
+wandb: 
+wandb: 🚀 View run rural-surf-5 at: https://wandb.ai/hcy43-academia-sinica/resnet/runs/xhjzm3ul
+wandb: ⭐️ View project at: https://wandb.ai/hcy43-academia-sinica/resnet
+wandb: Synced 5 W&B file(s), 1 media file(s), 2 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20250531_145507-xhjzm3ul/logs
+
+=== 模型評估結果 ===
+class_0: P=0.987, R=0.938, F1=0.962, Support=81
+class_1: P=1.000, R=0.933, F1=0.966, Support=45
+class_2: P=0.975, R=0.951, F1=0.963, Support=41
+class_3: P=1.000, R=1.000, F1=1.000, Support=40
+class_4: P=0.970, R=0.941, F1=0.955, Support=34
+class_5: P=1.000, R=0.850, F1=0.919, Support=20
+class_6: P=0.976, R=0.964, F1=0.970, Support=83
+
+=== 整體性能 ===
+Macro F1:      0.962
+Micro Precision: 0.985
+Micro Recall:    0.948
+Micro F1:        0.966
+評估結果已保存到: outputs/resnet50_bs32_lr0.0005_ep30_20250531_145459/evaluation_results.json
+
+訓練與評估全部完成！
+結果保存在: outputs/resnet50_bs32_lr0.0005_ep30_20250531_145459
+最佳模型: outputs/resnet50_bs32_lr0.0005_ep30_20250531_145459/best_multilabel_model.pt
+訓練歷史: outputs/resnet50_bs32_lr0.0005_ep30_20250531_145459/training_history.json
+評估結果: outputs/resnet50_bs32_lr0.0005_ep30_20250531_145459/evaluation_results.json
+已上傳最佳模型到 W&B artifact
