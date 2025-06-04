@@ -1,0 +1,289 @@
+image_name,labels
+case_001.jpg,6
+case_002.jpg,1
+case_003.jpg,0
+case_004.jpg,1 4
+case_005.jpg,2 4 5
+case_006.jpg,0
+case_007.jpg,2 4 5
+case_008.jpg,0 5 6
+case_009.jpg,2 4 5
+case_010.jpg,2 5
+case_011.jpg,0
+case_012.jpg,2
+case_013.jpg,1 3
+case_014.jpg,2 5
+case_015.jpg,0 3
+case_016.jpg,0 6
+case_017.jpg,2 4 5
+case_018.jpg,4 5
+case_019.jpg,5 6
+case_020.jpg,2 4 5
+case_021.jpg,1 3 4
+case_022.jpg,0 6
+case_023.jpg,2 6
+case_024.jpg,2 4 5
+case_025.jpg,0 6
+case_026.jpg,0 3
+case_027.jpg,6
+case_028.jpg,1 3
+case_029.jpg,0 6
+case_030.jpg,0 1 3
+case_031.jpg,2 6
+case_032.jpg,0 6
+case_033.jpg,6
+case_034.jpg,0 6
+case_035.jpg,0 6
+case_036.jpg,2 5
+case_037.jpg,4 5
+case_038.jpg,2 4 5
+case_039.jpg,2 4
+case_040.jpg,1 3 4
+case_041.jpg,2 4 5
+case_042.jpg,3
+case_043.jpg,2 5
+case_044.jpg,5 6
+case_045.jpg,2 4
+case_046.jpg,0 5 6
+case_047.jpg,1 3
+case_048.jpg,0 1 3
+case_049.jpg,0
+case_050.jpg,2
+case_051.jpg,6
+case_052.jpg,0 6
+case_053.jpg,6
+case_054.jpg,6
+case_055.jpg,5 6
+case_056.jpg,1 3
+case_057.jpg,6
+case_058.jpg,0
+case_059.jpg,1 3
+case_060.jpg,5 6
+case_061.jpg,0 6
+case_062.jpg,2 5 6
+case_063.jpg,6
+case_064.jpg,1 3 4
+case_065.jpg,1 2 4 5
+case_066.jpg,4 5
+case_067.jpg,0 6
+case_068.jpg,2 4 5
+case_069.jpg,1
+case_070.jpg,6
+case_071.jpg,1 3
+case_072.jpg,0 6
+case_073.jpg,6
+case_074.jpg,0 6
+case_075.jpg,6
+case_076.jpg,5 6
+case_077.jpg,4
+case_078.jpg,2 4 5
+case_079.jpg,2 5
+case_080.jpg,6
+case_081.jpg,0 6
+case_082.jpg,5 6
+case_083.jpg,1 3 4
+case_084.jpg,0 3
+case_085.jpg,6
+case_086.jpg,2 4 5
+case_087.jpg,0 6
+case_088.jpg,2 5
+case_089.jpg,0 1
+case_090.jpg,0 3
+case_091.jpg,6
+case_092.jpg,0 1
+case_093.jpg,2 6
+case_094.jpg,6
+case_095.jpg,1 3
+case_096.jpg,0 1
+case_097.jpg,0 6
+case_098.jpg,6
+case_099.jpg,0 1 3
+case_100.jpg,0 3
+case_101.jpg,0 3
+case_102.jpg,5 6
+case_103.jpg,2 4 5
+case_104.jpg,1 3
+case_105.jpg,1
+case_106.jpg,0 6
+case_107.jpg,0 6
+case_108.jpg,0 6
+case_109.jpg,2 3 4
+case_110.jpg,0 6
+case_111.jpg,0 1 3
+case_112.jpg,3 4
+case_113.jpg,5 6
+case_114.jpg,2 4 5
+case_115.jpg,0 3
+case_116.jpg,4 5
+case_117.jpg,6
+case_118.jpg,1 3
+case_119.jpg,6
+case_120.jpg,6
+case_121.jpg,0 1
+case_122.jpg,2 4 5
+case_123.jpg,0 6
+case_124.jpg,0 6
+case_125.jpg,6
+case_126.jpg,0 6
+case_127.jpg,6
+case_128.jpg,0 1
+case_129.jpg,0 6
+case_130.jpg,4
+case_131.jpg,0 5 6
+case_132.jpg,0 3
+case_133.jpg,5 6
+case_134.jpg,0 6
+case_135.jpg,1 3 4
+case_136.jpg,0 1 3
+case_137.jpg,0 6
+case_138.jpg,2 5 6
+case_139.jpg,1 3
+case_140.jpg,0 6
+case_141.jpg,0 1 6
+case_142.jpg,6
+case_143.jpg,1 3
+case_144.jpg,5 6
+case_145.jpg,0 5
+case_146.jpg,1 2 3 4
+case_147.jpg,6
+case_148.jpg,0 6
+case_149.jpg,6
+case_150.jpg,3
+case_151.jpg,6
+case_152.jpg,2 5
+case_153.jpg,2
+case_154.jpg,4 5
+case_155.jpg,6
+case_156.jpg,6
+case_157.jpg,1 6
+case_158.jpg,0 6
+case_159.jpg,0 3
+case_160.jpg,2 4 5
+case_161.jpg,0 5
+case_162.jpg,4 5
+case_163.jpg,0 1 3
+case_164.jpg,6
+case_165.jpg,0 1
+case_166.jpg,1
+case_167.jpg,3 4
+case_168.jpg,5 6
+case_169.jpg,2 5 6
+case_170.jpg,0 2
+case_171.jpg,6
+case_172.jpg,0 6
+case_173.jpg,6
+case_174.jpg,6
+case_175.jpg,0 6
+case_176.jpg,0 6
+case_177.jpg,1
+case_178.jpg,0 3
+case_179.jpg,6
+case_180.jpg,6
+case_181.jpg,4 5
+case_182.jpg,0 1
+case_183.jpg,6
+case_184.jpg,0
+case_185.jpg,0 5
+case_186.jpg,6
+case_187.jpg,0
+case_188.jpg,2 4 5
+case_189.jpg,0 1
+case_190.jpg,2
+case_191.jpg,2 5
+case_192.jpg,1 5
+case_193.jpg,0 6
+case_194.jpg,2 4 5
+case_195.jpg,4
+case_196.jpg,1
+case_197.jpg,6
+case_198.jpg,5 6
+case_199.jpg,1 3
+case_200.jpg,2 4 5
+case_201.jpg,0 3
+case_202.jpg,0
+case_203.jpg,0 6
+case_204.jpg,6
+case_205.jpg,6
+case_206.jpg,6
+case_207.jpg,6
+case_208.jpg,6
+case_209.jpg,6
+case_210.jpg,0 6
+case_211.jpg,1 3
+case_212.jpg,0 6
+case_213.jpg,0 1 3
+case_214.jpg,4
+case_215.jpg,0 1 6
+case_216.jpg,0 6
+case_217.jpg,3 4
+case_218.jpg,5 6
+case_219.jpg,1 3
+case_220.jpg,0 6
+case_221.jpg,0 6
+case_222.jpg,3
+case_223.jpg,0 6
+case_224.jpg,0 6
+case_225.jpg,0 1 3
+case_226.jpg,0 6
+case_227.jpg,6
+case_228.jpg,2 5
+case_229.jpg,4 5
+case_230.jpg,0 3
+case_231.jpg,6
+case_232.jpg,3 4
+case_233.jpg,3
+case_234.jpg,5 6
+case_235.jpg,0 1 3
+case_236.jpg,0 6
+case_237.jpg,2 4 5
+case_238.jpg,2 4 5
+case_239.jpg,0 1
+case_240.jpg,6
+case_241.jpg,0 3
+case_242.jpg,2
+case_243.jpg,1
+case_244.jpg,2 6
+case_245.jpg,2 4 5
+case_246.jpg,4
+case_247.jpg,1 3
+case_248.jpg,2 5
+case_249.jpg,4 5
+case_250.jpg,1 6
+case_251.jpg,2 5
+case_252.jpg,0 1
+case_253.jpg,0 3
+case_254.jpg,1 3
+case_255.jpg,5
+case_256.jpg,6
+case_257.jpg,0 3
+case_258.jpg,3
+case_259.jpg,1 3
+case_260.jpg,0 6
+case_261.jpg,6
+case_262.jpg,0 3
+case_263.jpg,2 4 5
+case_264.jpg,6
+case_265.jpg,0 6
+case_266.jpg,0 6
+case_267.jpg,6
+case_268.jpg,2 4 5
+case_269.jpg,6
+case_270.jpg,2 5 6
+case_271.jpg,0 1 6
+case_272.jpg,0 5 6
+case_273.jpg,2
+case_274.jpg,6
+case_275.jpg,4 5
+case_276.jpg,5 6
+case_277.jpg,6
+case_278.jpg,1 4
+case_279.jpg,6
+case_280.jpg,0 6
+case_281.jpg,1 6
+case_282.jpg,0 1 3
+case_283.jpg,1 6
+case_284.jpg,0 6
+case_285.jpg,0 6
+case_286.jpg,2 5
+case_287.jpg,0 6
+case_288.jpg,6
