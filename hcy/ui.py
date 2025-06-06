@@ -11,6 +11,48 @@ from typing import Dict, List, Tuple
 import io
 import os
 
+class SimpleCNN(nn.Module):
+    def __init__(self, num_classes):
+        super(SimpleCNN, self).__init__()
+        self.features = nn.Sequential(
+            nn.Conv2d(3, 32, kernel_size=3, padding=1),
+            nn.ReLU(),
+            nn.MaxPool2d(2),
+
+
+            nn.Conv2d(32, 64, kernel_size=3, padding=1),
+            nn.ReLU(),
+            nn.MaxPool2d(2),
+
+
+            nn.Conv2d(64, 128, kernel_size=3, padding=1),
+            nn.ReLU(),
+            nn.MaxPool2d(2),
+        )
+
+
+        # 🔍 動態推算 Flatten size
+        with torch.no_grad():
+            dummy_input = torch.zeros(1, 3, 224, 224)
+            dummy_output = self.features(dummy_input)
+            self.flattened_size = dummy_output.view(1, -1).shape[1]  # e.g. 128 * 28 * 28
+
+
+        self.classifier = nn.Sequential(
+            nn.Flatten(),
+            nn.Linear(self.flattened_size, 512),
+            nn.ReLU(),
+            nn.Dropout(0.5),
+            nn.Linear(512, num_classes)
+        )
+
+
+    def forward(self, x):
+        x = self.features(x)
+        x = self.classifier(x)
+        return x
+
+
 
 class ResNetMultilabel(nn.Module):
     """基於 ResNet 的 multi-label 分類模型"""
@@ -76,33 +118,38 @@ def load_model(model_name: str):
     
     # Define model paths - update these paths to your actual model files
     model_paths = {
-        "ResNet50": "./resnet50_bs32_lr0.0005_ep30_20250531_145459/best_multilabel_model.pt",
-        "EfficientNet-B0": "models/efficientnet_chiikawa.pth", 
-        "Vision Transformer": "models/vit_chiikawa.pth",
-        "MobileNetV2": "models/mobilenet_chiikawa.pth",
-        "Custom CNN": "models/custom_cnn_chiikawa.pth"
+        "ResNet50 + Transfer Learning": "./resnet50_bs32_lr0.0005_ep30_20250531_145459/best_multilabel_model.pt",
+        "CNN": "./CNN/best_model.pth", 
+        "YOLO": "YOLO/best.pt",
+        "ResNet50": "ResNet50/best.pt",
+        "MLP": "MLP/best.pth"
     }
     
     try:
         model_path = model_paths.get(model_name)
         if model_path and os.path.exists(model_path):
-            # Load your trained model
-            # Example for a generic multilabel classifier:
-            model = ResNetMultilabel(
+            if(model_name == "ResNet50 + Transfer Learning"):
+                model = ResNetMultilabel(
                     num_classes=7,
                     pretrained=True,
                     model_name="resnet50",
                     dropout_rate=0.5
                 ).to("cuda")
-            model.load_state_dict(torch.load(model_path, map_location=device))
+                model.load_state_dict(torch.load(model_path, map_location=device))
+                
+                # If you saved just the state dict, use this instead:
+                # model = YourModelClass(num_classes=len(CHARACTER_LABELS))
+                # model.load_state_dict(torch.load(model_path, map_location=device))
+                
+                model.eval()
+                model.to(device)
+                return model, device
+            elif(model_name == "CNN"):
+                model = SimpleCNN(num_classes=7).to(device)
+                model.load_state_dict(torch.load(model_path, map_location=device))
+                model.eval()
+                return model, device
             
-            # If you saved just the state dict, use this instead:
-            # model = YourModelClass(num_classes=len(CHARACTER_LABELS))
-            # model.load_state_dict(torch.load(model_path, map_location=device))
-            
-            model.eval()
-            model.to(device)
-            return model, device
         else:
             st.error(f"Model file not found: {model_path}")
             return None, device
@@ -187,11 +234,11 @@ def main():
         # Model selection
         st.subheader("Model Selection")
         available_models = [
+            "ResNet50 + Transfer Learning",
+            "CNN",
+            "YOLO",
             "ResNet50",
-            "EfficientNet-B0",
-            "Vision Transformer",
-            "MobileNetV2",
-            "Custom CNN"
+            "MLP"
         ]
         
         selected_model = st.selectbox(
